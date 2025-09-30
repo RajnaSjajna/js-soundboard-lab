@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+}
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.sound-button {
+ background-color: rgb(37, 177, 146);
+ border: 3px rgb(223, 19, 19) solid;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
