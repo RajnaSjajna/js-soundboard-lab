@@ -1,18 +1,40 @@
 body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    flex-direction: column;
+
+}
+.logo {
+    display: block;
+    margin: 0 auto;
 }
 .main-container {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    /* it can be done this way also
+    grid-template-columns: repeat(4, 1fr) */
     gap: 10px;
+ 
 }
 .sound-button {
- background-color: rgb(37, 177, 146);
- border: 3px rgb(223, 19, 19) solid;
+ background-color: rgb(145, 208, 49);
+ border: 3px rgba(0, 1, 0, 0.088) solid;
  border-radius: 20px;
  display: flex;
  align-items: center;
  justify-content: center;
+ width: 120px;
+ height: 120px;
+}
+
+.sound-button:hover {
+    background-image: url("../images/head.gif");
+    background-size: cover;
+    background-position: 50%;
+    color: rgb(255, 253, 253);
+    cursor: pointer;
 }
